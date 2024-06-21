@@ -1,0 +1,13 @@
+=================================================
+Fri Jun 21 12:44:32 EEST 2024
+=================================================
+>BATS_RUN_SKIPPED=true bats two_fer.bats
+
+ ✓ no name given
+ ✓ a name given
+ ✓ another name given
+ ✓ handle arg with spaces
+ ✓ handle arg with glob char
+
+5 tests, 0 failures
+=================================================
