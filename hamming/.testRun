@@ -1,0 +1,55 @@
+=================================================
+Wed Jul  3 21:15:34 EEST 2024
+=================================================
+$>BATS_RUN_SKIPPED=true command bats *.bats
+
+1..12
+ok 1 empty strands
+ok 2 single letter identical strands
+not ok 3 single letter different strands
+# (from function `assert_success' in file bats-extra.bash, line 409,
+#  in test file hamming.bats, line 25)
+#   `assert_success' failed
+# 
+# -- command failed --
+# status : 1
+# output : 
+# --
+# 
+not ok 4 long identical strands
+# (from function `assert_success' in file bats-extra.bash, line 409,
+#  in test file hamming.bats, line 32)
+#   `assert_success' failed
+# 
+# -- command failed --
+# status : 1
+# output : 
+# --
+# 
+not ok 5 long different strands
+# (from function `assert_success' in file bats-extra.bash, line 409,
+#  in test file hamming.bats, line 39)
+#   `assert_success' failed
+# 
+# -- command failed --
+# status : 1
+# output : 
+# --
+# 
+ok 6 disallow first strand longer
+ok 7 disallow second strand longer
+ok 8 disallow left empty strand
+ok 9 disallow right empty strand
+ok 10 no input
+ok 11 invalid input
+not ok 12 expose subtle '[[ $x == $y ]]' bug
+# (from function `assert_success' in file bats-extra.bash, line 409,
+#  in test file hamming.bats, line 92)
+#   `assert_success' failed
+# 
+# -- command failed --
+# status : 1
+# output : 
+# --
+# 
+=================================================
