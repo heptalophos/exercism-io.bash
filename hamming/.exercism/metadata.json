@@ -1,1 +1,9 @@
-{"track":"bash","exercise":"hamming","id":"bedcbd11f436456e9ea007d2a7fc88c6","url":"https://exercism.org/tracks/bash/exercises/hamming","handle":"heptalophos","is_requester":true,"auto_approve":false}
+{
+    "track": "bash",
+    "exercise": "hamming",
+    "id": "bedcbd11f436456e9ea007d2a7fc88c6",
+    "url": "https://exercism.org/tracks/bash/exercises/hamming/solutions/bedcbd11f436456e9ea007d2a7fc88c6",
+    "handle": "heptalophos",
+    "is_requester": true,
+    "auto_approve": false
+}
