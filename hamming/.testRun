@@ -53,3 +53,27 @@ not ok 12 expose subtle '[[ $x == $y ]]' bug
 # --
 # 
 =================================================
+
+
+
+=================================================
+Thu Jul  4 10:30:14 EEST 2024
+=================================================
+$>BATS_RUN_SKIPPED=true command bats *.bats
+
+ ✓ empty strands
+ ✓ single letter identical strands
+ ✓ single letter different strands
+ ✓ long identical strands
+ ✓ long different strands
+ ✓ disallow first strand longer
+ ✓ disallow second strand longer
+ ✓ disallow left empty strand
+ ✓ disallow right empty strand
+ ✓ no input
+ ✓ invalid input
+ ✓ expose subtle '[[ $x == $y ]]' bug
+
+12 tests, 0 failures
+
+=================================================
