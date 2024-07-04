@@ -28,3 +28,24 @@ ok 10 contains shell globbing character
 
 10 tests, 0 failures
 =================================================
+
+
+
+=================================================
+Mon Jul  1 16:38:46 EEST 2024
+=================================================
+$>BATS_RUN_SKIPPED=true command bats *.bats
+
+ ✓ basic
+ ✓ lowercase words
+ ✓ punctuation
+ ✓ all caps word
+ ✓ punctuation without whitespace
+ ✓ very long abbreviation
+ ✓ consecutive delimiters
+ ✓ apostrophes
+ ✓ underscore emphasis
+ ✓ contains shell globbing character
+
+10 tests, 0 failures
+=================================================
