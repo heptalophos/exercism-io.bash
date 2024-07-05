@@ -1,0 +1,19 @@
+=================================================
+Fri Jul  5 13:55:00 EEST 2024
+=================================================
+$>BATS_RUN_SKIPPED=true command bats *.bats
+
+ ✓ empty sentence
+ ✓ perfect lower case
+ ✓ only lower case
+ ✓ missing the letter 'x'
+ ✓ missing the letter 'h'
+ ✓ with underscores
+ ✓ with numbers
+ ✓ missing letters replaced by numbers
+ ✓ mixed case and punctuation
+ ✓ a-m and A-M are 26 different characters but not a pangram
+
+10 tests, 0 failures
+
+=================================================
