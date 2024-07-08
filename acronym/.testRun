@@ -14,18 +14,6 @@ $>BATS_RUN_SKIPPED=true command bats *.bats
  ✓ underscore emphasis
  ✓ contains shell globbing character
 
-1..10
-ok 1 basic
-ok 2 lowercase words
-ok 3 punctuation
-ok 4 all caps word
-ok 5 punctuation without whitespace
-ok 6 very long abbreviation
-ok 7 consecutive delimiters
-ok 8 apostrophes
-ok 9 underscore emphasis
-ok 10 contains shell globbing character
-
 10 tests, 0 failures
 =================================================
 
@@ -48,4 +36,24 @@ $>BATS_RUN_SKIPPED=true command bats *.bats
  ✓ contains shell globbing character
 
 10 tests, 0 failures
+=================================================
+
+
+
+=================================================
+Thu Jul  4 16:09:28 EEST 2024
+=================================================
+$>BATS_RUN_SKIPPED=true command bats *.bats
+
+1..10
+ok 1 basic
+ok 2 lowercase words
+ok 3 punctuation
+ok 4 all caps word
+ok 5 punctuation without whitespace
+ok 6 very long abbreviation
+ok 7 consecutive delimiters
+ok 8 apostrophes
+ok 9 underscore emphasis
+ok 10 contains shell globbing character
 =================================================
