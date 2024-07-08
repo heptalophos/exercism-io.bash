@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 errorexit() {
-    echo $1 >&2 && exit 1
+    echo "$1" >&2 && exit 1
 }
 
 hamming() {
@@ -16,9 +16,13 @@ hamming() {
             (( ++hdist ))
         done
     fi
-    echo "$hdist" && exit 0
+    echo "$hdist"
+}
+
+main() {
+    hamming "$@" && exit 0
 }
 
 set -e -u
 
-hamming "$@"
+main "$@"
