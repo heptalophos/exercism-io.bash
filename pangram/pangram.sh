@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 pangram() {
     (( $# == 1 )) && sentence=${1^^} || exit 1
     local -A letters=()
@@ -9,11 +8,9 @@ pangram() {
     done
     (( ${#letters[@]} == 26 )) && echo "true" || echo "false" 
 }
-
 main() {
     pangram "$1" && exit 0
 }
 
 set -e -u
-
 main "$@"
