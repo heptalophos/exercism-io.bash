@@ -11,3 +11,18 @@ Fri Jun 21 12:44:32 EEST 2024
 
 5 tests, 0 failures
 =================================================
+
+
+
+=================================================
+Mon Jun 24 13:47:28 EEST 2024
+=================================================
+$>bats
+
+1..5
+ok 1 no name given
+ok 2 a name given
+ok 3 another name given
+ok 4 handle arg with spaces
+ok 5 handle arg with glob char
+=================================================
