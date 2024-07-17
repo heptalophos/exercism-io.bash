@@ -1,0 +1,36 @@
+=================================================
+Wed Jul 17 11:11:31 EEST 2024
+=================================================
+$>BATS_RUN_SKIPPED=true command bats *.bats
+
+ ✓ stating something
+ ✓ shouting
+ ✓ shouting gibberish
+ ✓ asking a question
+ ✓ asking a numeric question
+ ✓ asking gibberish
+ ✓ talking forcefully
+ ✓ using acronyms in regular speech
+ ✓ forceful question
+ ✓ shouting numbers
+ ✓ no letters
+ ✓ question with no letters
+ ✓ shouting with special characters
+ ✓ shouting with no exclamation mark
+ ✓ statement containing question mark
+ ✓ non-letters with question
+ ✓ prattling on
+ ✓ silence
+ ✓ prolonged silence
+ ✓ alternate silence
+ ✓ multiple line question
+ ✓ starting with whitespace
+ ✓ ending with whitespace
+ ✓ other whitespace
+ ✓ non-question ending with whitespace
+ ✓ no input is silence
+ ✓ yelling a filename expansion
+ ✓ asking a filename expansion
+
+28 tests, 0 failures
+=================================================
