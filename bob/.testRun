@@ -1,0 +1,74 @@
+=================================================
+Wed Jul 17 11:11:31 EEST 2024
+=================================================
+$>BATS_RUN_SKIPPED=true command bats *.bats
+
+ ✓ stating something
+ ✓ shouting
+ ✓ shouting gibberish
+ ✓ asking a question
+ ✓ asking a numeric question
+ ✓ asking gibberish
+ ✓ talking forcefully
+ ✓ using acronyms in regular speech
+ ✓ forceful question
+ ✓ shouting numbers
+ ✓ no letters
+ ✓ question with no letters
+ ✓ shouting with special characters
+ ✓ shouting with no exclamation mark
+ ✓ statement containing question mark
+ ✓ non-letters with question
+ ✓ prattling on
+ ✓ silence
+ ✓ prolonged silence
+ ✓ alternate silence
+ ✓ multiple line question
+ ✓ starting with whitespace
+ ✓ ending with whitespace
+ ✓ other whitespace
+ ✓ non-question ending with whitespace
+ ✓ no input is silence
+ ✓ yelling a filename expansion
+ ✓ asking a filename expansion
+
+28 tests, 0 failures
+=================================================
+
+
+
+=================================================
+Wed Jul 17 12:39:01 EEST 2024
+=================================================
+$>BATS_RUN_SKIPPED=true command bats *.bats
+
+1..28
+ok 1 stating something
+ok 2 shouting
+ok 3 shouting gibberish
+ok 4 asking a question
+ok 5 asking a numeric question
+ok 6 asking gibberish
+ok 7 talking forcefully
+ok 8 using acronyms in regular speech
+ok 9 forceful question
+ok 10 shouting numbers
+ok 11 no letters
+ok 12 question with no letters
+ok 13 shouting with special characters
+ok 14 shouting with no exclamation mark
+ok 15 statement containing question mark
+ok 16 non-letters with question
+ok 17 prattling on
+ok 18 silence
+ok 19 prolonged silence
+ok 20 alternate silence
+ok 21 multiple line question
+ok 22 starting with whitespace
+ok 23 ending with whitespace
+ok 24 other whitespace
+ok 25 non-question ending with whitespace
+ok 26 no input is silence
+ok 27 yelling a filename expansion
+ok 28 asking a filename expansion
+=================================================
