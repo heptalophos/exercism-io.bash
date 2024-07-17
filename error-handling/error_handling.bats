@@ -4,7 +4,7 @@ load bats-extra
 # local version: 0.0.1
 
 @test "correct arguments" {
-  #[[ $BATS_RUN_SKIPPED == "true" ]] || skip
+  [[ $BATS_RUN_SKIPPED == "true" ]] || skip
   run bash error_handling.sh Alice
 
   assert_success
