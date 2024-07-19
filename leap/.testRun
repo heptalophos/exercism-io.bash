@@ -1,0 +1,21 @@
+=================================================
+Fri Jul 19 16:20:38 EEST 2024
+=================================================
+$>BATS_RUN_SKIPPED=true command bats *.bats
+
+✓ year not divisible by 4: common year
+✓ year divisible by 2, not divisible by 4 in common year
+✓ year divisible by 4, not divisible by 100: leap year
+✓ year divisible by 4 and 5 is still a leap year
+✓ year divisible by 100, not divisible by 400: common year
+✓ year divisible by 100 but not by 3 is still not a leap year
+✓ year divisible by 400: leap year
+✓ year divisible by 400 but not by 125 is still a leap year
+✓ year divisible by 200, not divisible by 400 in common year
+✓ No input should return an error
+✓ Too many arguments should return an error
+✓ Float number input should return an error
+✓ Alpha input should return an error
+
+13 tests, 0 failures
+=================================================

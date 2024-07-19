@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 error_handling() {
-    local -i exitcode=0
     case $# in
     1) echo "Hello, $1";;
     *) echo >&2 "Usage: ${0#*} <person>" && exit 1;;

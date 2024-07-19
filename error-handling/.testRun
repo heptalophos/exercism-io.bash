@@ -12,3 +12,18 @@ $>BATS_RUN_SKIPPED=true command bats *.bats
 5 tests, 0 failures
 
 =================================================
+
+
+
+=================================================
+Wed Jul 17 12:48:39 EEST 2024
+=================================================
+$>BATS_RUN_SKIPPED=true command bats *.bats
+
+1..5
+ok 1 correct arguments
+ok 2 one long argument
+ok 3 incorrect arguments
+ok 4 print usage banner with no value given
+ok 5 empty argument
+=================================================

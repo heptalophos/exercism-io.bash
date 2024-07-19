@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 errorexit() {
-    echo "$1" >&2 && exit 1
+    echo "$*" >&2 && exit 1
 }
 
 hamming() {
