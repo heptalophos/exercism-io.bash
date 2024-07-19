@@ -1,24 +1,24 @@
 #!/usr/bin/env bash
 
-# The following comments should help you get started:
-# - Bash is flexible. You may use functions or write a "raw" script.
-#
-# - Complex code can be made easier to read by breaking it up
-#   into functions, however this is sometimes overkill in bash.
-#
-# - You can find links about good style and other resources
-#   for Bash in './README.md'. It came with this exercise.
-#
-#   Example:
-#   # other functions here
-#   # ...
-#   # ...
-#
-#   main () {
-#     # your main function code here
-#   }
-#
-#   # call main with all of the positional arguments
-#   main "$@"
-#
-# *** PLEASE REMOVE THESE COMMENTS BEFORE SUBMITTING YOUR SOLUTION ***
+errexit() {
+    echo "$*" >&2 && exit 1
+}
+
+grains() {
+    # shopt -s extglob nullglob
+    case "$1" in
+    total) 
+        printf "%u\n" $(( 0xffffffffffffffff )) ;;
+    [1-9]|[1-5][0-9]|6[0-4]) 
+        printf "%u\n" $(( 1 << "$1"-1 )) ;;
+    *) 
+        errexit "Error: invalid input" ;;
+    esac
+}
+
+main() {
+    [[ "$#" != 1 ]] && errexit "Error: invalid input"
+    grains "$1" && exit 0
+}
+
+set -e -u && main "$@"
