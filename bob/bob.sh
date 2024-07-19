@@ -9,7 +9,7 @@ yelling() {
     boolx $?
 }
 bob() {
-    read -d '' qry <<< "$(sed 's/[\r]//gi' <<< ${1:-})"
+    read -d '' qry <<< "$(sed 's/[\r]//gi' <<< "${1:-}")"
     case "$(silent "$qry")$(yelling "$qry")$(question "$qry")" in
     "001") echo "Sure." ;;
     "010") echo "Whoa, chill out!" ;;
