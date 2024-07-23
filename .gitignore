@@ -2,3 +2,5 @@ HELP.md
 HINTS.md
 *.ps1
 runTests.sh
+.clj-kondo/
+.lsp
