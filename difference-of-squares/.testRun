@@ -1,0 +1,18 @@
+=================================================
+Tue Aug 27 16:07:51 EEST 2024
+=================================================
+$>BATS_RUN_SKIPPED=true command bats *.bats
+
+ ✓ square of sum 1
+ ✓ square of sum 5
+ ✓ square of sum 100
+ ✓ sum of squares 1
+ ✓ sum of squares 5
+ ✓ sum of squares 100
+ ✓ difference of squares 1
+ ✓ difference of squares 5
+ ✓ difference of squares 100
+
+9 tests, 0 failures
+
+=================================================
