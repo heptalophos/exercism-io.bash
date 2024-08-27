@@ -1,24 +1,41 @@
 #!/usr/bin/env bash
 
-# The following comments should help you get started:
-# - Bash is flexible. You may use functions or write a "raw" script.
-#
-# - Complex code can be made easier to read by breaking it up
-#   into functions, however this is sometimes overkill in bash.
-#
-# - You can find links about good style and other resources
-#   for Bash in './README.md'. It came with this exercise.
-#
-#   Example:
-#   # other functions here
-#   # ...
-#   # ...
-#
-#   main () {
-#     # your main function code here
-#   }
-#
-#   # call main with all of the positional arguments
-#   main "$@"
-#
-# *** PLEASE REMOVE THESE COMMENTS BEFORE SUBMITTING YOUR SOLUTION ***
+errexit() { echo "$*" >&2 && exit 1; }
+
+square_of_sum() {
+    local -i sum=0
+    for (( i=1; i <= $1; i++)) 
+    do
+        (( sum += $i )) 
+    done
+    echo "$(( sum ** 2 ))"
+}
+
+sum_of_squares() {
+    local -i sum=0
+    for (( i=1; i <= $1; i++)) 
+    do
+        (( sum += i**2 ))
+    done
+    echo "$(( sum ))"
+}
+
+difference() {
+    diff=$(( $(square_of_sum $1) - $(sum_of_squares $1) ))
+    echo "$(( diff ))"
+}
+
+differenceSquares() {
+    case $1 in
+    difference | sum_of_squares | square_of_sum)
+        echo "$( $1 $2 )" ;;
+    *) 
+        errexit "invalid argument: $1" ;;
+    esac
+}
+
+main() {
+    differenceSquares "$@" && exit 0
+}
+
+set -e -u && main "$@"
