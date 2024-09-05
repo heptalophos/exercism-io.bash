@@ -1,0 +1,20 @@
+=================================================
+Thu Sep  5 23:15:11 EEST 2024
+=================================================
+$>BATS_RUN_SKIPPED=true command bats *.bats
+
+✓ lowercase letter
+✓ uppercase letter
+✓ valuable letter
+✓ short word
+✓ short, valuable word
+✓ medium word
+✓ medium, valuable word
+✓ long, mixed-case word
+✓ english-like word
+✓ empty input
+✓ entire alphabet available
+
+11 tests, 0 failures
+
+=================================================
