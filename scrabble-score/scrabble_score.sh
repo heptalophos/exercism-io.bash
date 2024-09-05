@@ -1,24 +1,24 @@
 #!/usr/bin/env bash
 
-# The following comments should help you get started:
-# - Bash is flexible. You may use functions or write a "raw" script.
-#
-# - Complex code can be made easier to read by breaking it up
-#   into functions, however this is sometimes overkill in bash.
-#
-# - You can find links about good style and other resources
-#   for Bash in './README.md'. It came with this exercise.
-#
-#   Example:
-#   # other functions here
-#   # ...
-#   # ...
-#
-#   main () {
-#     # your main function code here
-#   }
-#
-#   # call main with all of the positional arguments
-#   main "$@"
-#
-# *** PLEASE REMOVE THESE COMMENTS BEFORE SUBMITTING YOUR SOLUTION ***
+scrabble() {
+    local -i score=0
+    shopt -s nocasematch
+    for i in $(seq 0 ${#1}); do
+    	case ${1:$i:1} in 
+            [AEIOULNRST]) (( score += 1  )) ;;
+            [DG])         (( score += 2  )) ;;
+            [BCMP])       (( score += 3  )) ;;
+            [FHVWY])      (( score += 4  )) ;;
+            [K])          (( score += 5  )) ;;
+            [JX])         (( score += 8  )) ;;
+            [QZ])         (( score += 10 )) ;;
+        esac
+    done
+    echo ${score}
+}
+
+main() {
+    scrabble "$1" && exit 0
+}
+
+set -e -u && main "$@"
