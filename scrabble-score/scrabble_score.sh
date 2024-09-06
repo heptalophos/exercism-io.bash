@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 scrabble() {
-    local -i score=0
     shopt -s nocasematch
+    local -i score=0
     for i in $(seq 0 ${#1}); do
     	case ${1:$i:1} in 
             [AEIOULNRST]) (( score += 1  )) ;;
