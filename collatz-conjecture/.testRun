@@ -1,0 +1,34 @@
+=================================================
+Sun Sep  8 22:25:21 EEST 2024
+=================================================
+$>BATS_RUN_SKIPPED=true command bats *.bats
+
+ ✓ zero steps for one
+ ✓ divide if even
+ ✓ even and odd steps
+ ✓ large number of even and odd steps
+ ✓ zero is an error
+ ✓ negative value is an error
+
+6 tests, 0 failures
+
+=================================================
+
+
+
+=================================================
+Mon Sep  9 01:02:49 EEST 2024
+=================================================
+$>BATS_RUN_SKIPPED=true command bats *.bats
+
+ ✓ zero steps for one
+ ✓ divide if even
+ ✓ even and odd steps
+ ✓ large number of even and odd steps
+ ✓ zero is an error
+ ✓ negative value is an error
+ ✓ string argument is an error
+
+7 tests, 0 failures
+
+=================================================
