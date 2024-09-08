@@ -44,3 +44,10 @@ load bats-extra
   assert_failure
   assert_output "Error: Only positive numbers are allowed"
 }
+
+@test "string argument is an error" {
+  [[ $BATS_RUN_SKIPPED == "true" ]] || skip
+  run bash collatz_conjecture.sh alpha
+  assert_failure
+  assert_output "Error: Only positive numbers are allowed"
+}
