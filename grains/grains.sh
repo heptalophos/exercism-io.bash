@@ -11,7 +11,7 @@ grains() {
         printf "%u\n" $(( 0xffffffffffffffff )) ;;
     [1-9]|[1-5][0-9]|6[0-4]) 
         printf "%u\n" $(( 1 << "$1"-1 )) ;;
-    *) 
+    *)
         errexit "Error: invalid input" ;;
     esac
 }
