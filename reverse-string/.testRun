@@ -1,0 +1,16 @@
+=================================================
+Tue Sep 24 02:55:54 EEST 2024
+=================================================
+$ BATS_RUN_SKIPPED=true command bats *.bats
+
+ ✓ an empty string
+ ✓ a word
+ ✓ a capitalised word
+ ✓ a sentence with punctuation
+ ✓ a palindrome
+ ✓ an even-sized word
+ ✓ avoid globbing
+
+7 tests, 0 failures
+
+=================================================
