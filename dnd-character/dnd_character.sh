@@ -12,7 +12,7 @@ ability() {
     for _ in seq 1 1 4 
     do
         roll=$(( 1 + $RANDOM % 6 ))
-        ((roll < minroll)) && minroll=$roll
+        ((roll < minroll)) && (( minroll=$roll ))
         (( sum += roll ))
     done
     echo $(( sum - minroll ))
@@ -20,7 +20,7 @@ ability() {
 
 modifier() {
     local -i value=$1
-    (( $value % 2 )) && (( --value ))
+    (( value % 2 )) && (( --value ))
     echo $(( (value - 10) / 2 ))
 }
 
@@ -36,16 +36,16 @@ generate() {
         fi
     done
 }
-dndCharacter() {
+
+dndcharacter() {
     case "$1" in
-    modifier) modifier "$2";; 
-    generate) generate;;
+    modifier | generate) "$@";; 
     *) errexit "Usage: ${0##*/} <generate|modifier> <?score>";;
     esac
 }
 
 main() {
-    dndCharacter "$@" && exit 0
+    dndcharacter "$@" && exit 0
 }
 
 set -e -u && main "$@"
