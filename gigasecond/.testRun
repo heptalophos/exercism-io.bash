@@ -1,0 +1,14 @@
+=================================================
+Fri Sep 27 03:05:39 EEST 2024
+=================================================
+$ BATS_RUN_SKIPPED=true command bats *.bats
+
+ ✓ date only specificaion of time
+ ✓ second test for date only specification of time
+ ✓ third test for date only specification of time
+ ✓ full time specified
+ ✓ full time with day roll-over
+
+5 tests, 0 failures
+
+=================================================
