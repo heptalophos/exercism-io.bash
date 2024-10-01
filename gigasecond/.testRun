@@ -12,3 +12,18 @@ $ BATS_RUN_SKIPPED=true command bats *.bats
 5 tests, 0 failures
 
 =================================================
+
+
+
+=================================================
+Fri Sep 27 03:18:14 EEST 2024
+=================================================
+$ BATS_RUN_SKIPPED=true command bats *.bats
+
+1..5
+ok 1 date only specificaion of time
+ok 2 second test for date only specification of time
+ok 3 third test for date only specification of time
+ok 4 full time specified
+ok 5 full time with day roll-over
+=================================================
