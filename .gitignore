@@ -5,3 +5,4 @@ runTests.sh
 .clj-kondo/
 .lsp/
 .older/
+.vscode/
