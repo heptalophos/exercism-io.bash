@@ -2,9 +2,9 @@
 
 reverse() {
     local revstr=""
-    for (( i =${#1}; i >= 0; --i )) 
+    for i in $( seq ${#1} -1 1 ) 
     do
-        revstr+="${1:i:1}"
+        revstr+=${1:i-1:1}
     done
     echo "$revstr"
 }
