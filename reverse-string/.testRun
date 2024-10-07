@@ -14,3 +14,20 @@ $ BATS_RUN_SKIPPED=true command bats *.bats
 7 tests, 0 failures
 
 =================================================
+
+
+
+=================================================
+Tue Sep 24 03:07:36 EEST 2024
+=================================================
+$ BATS_RUN_SKIPPED=true command bats *.bats
+
+1..7
+ok 1 an empty string
+ok 2 a word
+ok 3 a capitalised word
+ok 4 a sentence with punctuation
+ok 5 a palindrome
+ok 6 an even-sized word
+ok 7 avoid globbing
+=================================================
