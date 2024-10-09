@@ -1,0 +1,22 @@
+=================================================
+Wed Oct  9 15:57:23 EEST 2024
+=================================================
+$ BATS_RUN_SKIPPED=true command bats *.bats
+
+ ✓ queen must have positive row
+ ✓ queen must have row on board
+ ✓ queen must have positive column
+ ✓ queen must have column on board
+ ✓ same position
+ ✓ can not attack
+ ✓ can attack on same row
+ ✓ can attack on same column
+ ✓ can attack on first diagonal
+ ✓ can attack on second diagonal
+ ✓ can attack on third diagonal
+ ✓ can attack on fourth diagonal
+ ✓ cannot attack if falling diagonals are only the same when reflected across the longest falling diagonal
+
+13 tests, 0 failures
+
+=================================================
