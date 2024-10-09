@@ -1,1 +1,9 @@
-{"track":"bash","exercise":"secret-handshake","id":"3e9c9a4664cd46d8a4e0b4263219fe01","url":"https://exercism.org/tracks/bash/exercises/secret-handshake","handle":"heptalophos","is_requester":true,"auto_approve":false}
+{
+    "track": "bash",
+    "exercise": "secret-handshake",
+    "id": "3e9c9a4664cd46d8a4e0b4263219fe01",
+    "url": "https://exercism.org/tracks/bash/exercises/secret-handshake/solutions/3e9c9a4664cd46d8a4e0b4263219fe01",
+    "handle": "heptalophos",
+    "is_requester": true,
+    "auto_approve": false
+}
