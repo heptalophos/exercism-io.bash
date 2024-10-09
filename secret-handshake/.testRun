@@ -1,0 +1,19 @@
+=================================================
+Wed Oct  9 19:26:35 EEST 2024
+=================================================
+$ BATS_RUN_SKIPPED=true command bats *.bats
+
+ ✓ wink for 1
+ ✓ double blink for 10
+ ✓ close your eyes for 100
+ ✓ jump for 1000
+ ✓ combine two actions
+ ✓ all possible actions
+ ✓ do nothing for zero
+ ✓ reversing no actions still gives no actions
+ ✓ reversing one action gives the same action
+ ✓ reverse two actions
+ ✓ reverse all possible actions
+
+11 tests, 0 failures
+=================================================
