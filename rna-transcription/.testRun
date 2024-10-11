@@ -1,0 +1,18 @@
+=================================================
+Fri Oct 11 18:23:56 EEST 2024
+=================================================
+$ BATS_RUN_SKIPPED=true command bats *.bats
+
+ ✓ Empty RNA sequence
+ ✓ RNA complement of cytosine is guanine
+ ✓ RNA complement of guanine is cytosine
+ ✓ RNA complement of thymine is adenine
+ ✓ RNA complement of adenine is uracil
+ ✓ RNA complement
+ ✓ Handles invalid character
+ ✓ Handles completely invalid string
+ ✓ Handles partially invalid string
+
+9 tests, 0 failures
+
+=================================================
