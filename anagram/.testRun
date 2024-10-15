@@ -1,0 +1,25 @@
+=================================================
+Tue Oct 15 22:54:00 EEST 2024
+=================================================
+$ BATS_RUN_SKIPPED=true command bats *.bats
+
+ ✓ no matches
+ ✓ detects two anagrams
+ ✓ does not detect anagram subsets
+ ✓ detects anagram
+ ✓ detects three anagrams
+ ✓ detects multiple anagrams with different case
+ ✓ does not detect non-anagrams with identical checksum
+ ✓ detects anagrams case-insensitively
+ ✓ detects anagrams using case-insensitive subject
+ ✓ detects anagrams using case-insensitive possible matches
+ ✓ does not detect a anagram if the original word is repeated
+ ✓ anagrams must use all letters exactly once
+ ✓ words are not anagrams of themselves
+ ✓ words are not anagrams of themselves even if letter case is partially different
+ ✓ words are not anagrams of themselves even if letter case is completely different
+ ✓ words other than themselves can be anagrams
+
+16 tests, 0 failures
+
+=================================================
