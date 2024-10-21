@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 
-errexit() { 
-    echo "$*" >&2 && exit 1 
-} 
+errexit() { echo "$*" >&2 && exit 1; } 
 
 readonly -a character=(strength dexterity constitution 
                        intelligence wisdom charisma)
@@ -11,8 +9,8 @@ ability() {
     local -i roll minroll=6 sum=0
     for _ in seq 1 1 4 
     do
-        roll=$(( 1 + $RANDOM % 6 ))
-        ((roll < minroll)) && (( minroll=$roll ))
+        roll=$(( 1 + RANDOM % 6 ))
+        ((roll < minroll)) && (( minroll=roll ))
         (( sum += roll ))
     done
     echo $(( sum - minroll ))
