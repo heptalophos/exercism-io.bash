@@ -12,3 +12,18 @@ $ BATS_RUN_SKIPPED=true command bats *.bats
 5 tests, 0 failures
 
 =================================================
+
+
+
+=================================================
+Fri Sep 27 03:18:24 EEST 2024
+=================================================
+$ BATS_RUN_SKIPPED=true command bats *.bats
+
+1..5
+ok 1 empty strand
+ok 2 can count one nucleotide in single-character input
+ok 3 strand with repeated nucleotide
+ok 4 strand with multiple nucleotides
+ok 5 strand with invalid nucleotides
+=================================================
