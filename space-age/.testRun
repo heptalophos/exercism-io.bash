@@ -1,0 +1,25 @@
+=================================================
+Thu Oct 24 23:34:36 EEST 2024
+=================================================
+$ BATS_RUN_SKIPPED=true command bats *.bats
+
+1..9
+ok 1 age on Earth
+ok 2 age on Mercury
+ok 3 age on Venus
+ok 4 age on Mars
+ok 5 age on Jupiter
+ok 6 age on Saturn
+ok 7 age on Uranus
+ok 8 age on Neptune
+not ok 9 not a planet
+# (from function `assert_output' in file bats-extra.bash, line 386,
+#  in test file space_age.bats, line 66)
+#   `assert_output --partial "not a planet"' failed
+# 
+# -- output does not contain substring --
+# substring : not a planet
+# output    : space_age.sh: line 23: orbitalPeriod[$planet]: unbound variable
+# --
+# 
+=================================================
