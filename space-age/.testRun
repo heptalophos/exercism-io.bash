@@ -23,3 +23,24 @@ not ok 9 not a planet
 # --
 # 
 =================================================
+
+
+
+=================================================
+Fri Oct 25 17:20:23 EEST 2024
+=================================================
+$ BATS_RUN_SKIPPED=true command bats *.bats
+
+ ✓ age on Earth
+ ✓ age on Mercury
+ ✓ age on Venus
+ ✓ age on Mars
+ ✓ age on Jupiter
+ ✓ age on Saturn
+ ✓ age on Uranus
+ ✓ age on Neptune
+ ✓ not a planet
+
+9 tests, 0 failures
+
+=================================================
