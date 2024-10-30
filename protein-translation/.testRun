@@ -1,0 +1,41 @@
+=================================================
+Wed Oct 30 22:52:06 EET 2024
+=================================================
+$ BATS_RUN_SKIPPED=true command bats *.bats
+
+ ✓ Empty RNA sequence results in no proteins
+ ✓ Methionine RNA sequence
+ ✓ Phenylalanine RNA sequence 1
+ ✓ Phenylalanine RNA sequence 2
+ ✓ Leucine RNA sequence 1
+ ✓ Leucine RNA sequence 2
+ ✓ Serine RNA sequence 1
+ ✓ Serine RNA sequence 2
+ ✓ Serine RNA sequence 3
+ ✓ Serine RNA sequence 4
+ ✓ Tyrosine RNA sequence 1
+ ✓ Tyrosine RNA sequence 2
+ ✓ Cysteine RNA sequence 1
+ ✓ Cysteine RNA sequence 2
+ ✓ Tryptophan RNA sequence
+ ✓ STOP codon RNA sequence 1
+ ✓ STOP codon RNA sequence 2
+ ✓ STOP codon RNA sequence 3
+ ✓ Sequence of two protein codons translates into proteins
+ ✓ Sequence of two different protein codons translates into proteins
+ ✓ Translate RNA strand into correct protein list
+ ✓ Translation stops if STOP codon at beginning of sequence
+ ✓ Translation stops if STOP codon at end of two-codon sequence
+ ✓ Translation stops if STOP codon at end of three-codon sequence
+ ✓ Translation stops if STOP codon in middle of three-codon sequence
+ ✓ Translation stops if STOP codon in middle of six-codon sequence
+ ✓ Sequence of two non-STOP codons does not translate to a STOP codon
+ ✓ Error case
+ ✓ Non-existing codon can't translate
+ ✓ Unknown amino acids, not part of a codon, can't translate
+ ✓ Incomplete RNA sequence can't translate
+ ✓ Incomplete RNA sequence can translate if valid until a STOP codon
+
+32 tests, 0 failures
+
+=================================================
