@@ -49,3 +49,29 @@ ok 14 words are not anagrams of themselves even if letter case is partially diff
 ok 15 words are not anagrams of themselves even if letter case is completely different
 ok 16 words other than themselves can be anagrams
 =================================================
+
+
+
+=================================================
+Fri Oct 25 17:46:37 EEST 2024
+=================================================
+$ BATS_RUN_SKIPPED=true command bats *.bats
+
+1..16
+ok 1 no matches
+ok 2 detects two anagrams
+ok 3 does not detect anagram subsets
+ok 4 detects anagram
+ok 5 detects three anagrams
+ok 6 detects multiple anagrams with different case
+ok 7 does not detect non-anagrams with identical checksum
+ok 8 detects anagrams case-insensitively
+ok 9 detects anagrams using case-insensitive subject
+ok 10 detects anagrams using case-insensitive possible matches
+ok 11 does not detect a anagram if the original word is repeated
+ok 12 anagrams must use all letters exactly once
+ok 13 words are not anagrams of themselves
+ok 14 words are not anagrams of themselves even if letter case is partially different
+ok 15 words are not anagrams of themselves even if letter case is completely different
+ok 16 words other than themselves can be anagrams
+=================================================
