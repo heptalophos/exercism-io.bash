@@ -1,0 +1,28 @@
+=================================================
+Wed Nov  6 20:27:00 EET 2024
+=================================================
+$ BATS_RUN_SKIPPED=true command bats *.bats
+
+sublist.bats
+ ✓ empty lists
+ ✓ empty list within non empty list
+ ✓ non empty list contains empty list
+ ✓ list equals itself
+ ✓ different lists
+ ✓ false start
+ ✓ consecutive
+ ✓ sublist at start
+ ✓ sublist in middle
+ ✓ sublist at end
+ ✓ at start of superlist
+ ✓ in middle of superlist
+ ✓ at end of superlist
+ ✓ first list missing element from second list
+ ✓ second list missing element from first list
+ ✓ first list missing additional digits from second list
+ ✓ order matters to a list
+ ✓ same digits but different numbers
+
+18 tests, 0 failures
+
+=================================================
