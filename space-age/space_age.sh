@@ -20,11 +20,11 @@ space_age() {
         [Uranus]=84.016846
         [Neptune]=164.79132
     )
-    [[ ! -n ${orbitalPeriod[$planet]} ]] && 
+    [[ -z ${orbitalPeriod[$planet]} ]] && 
     errexit "Sorry, $planet is not a planet 😄"
     
     printf "%.2f" \
-    $(float_2ble_div $age $oneEarthYear ${orbitalPeriod[$planet]})
+    $(float_2ble_div "$age" "$oneEarthYear" "${orbitalPeriod[$planet]}")
 }
 
 main() {
