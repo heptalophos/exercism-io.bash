@@ -3,8 +3,8 @@
 errexit() { echo "$*" >&2 && exit 1; }
 
 protein_translate() {
-    local rna="$1" codon protein
-    local -a proteins
+    local rna codon protein
+    local -a proteins=
     local -rA codons_map=(
         [AUG]=Methionine
         [UUU]=Phenylalanine [UUC]=Phenylalanine
@@ -15,6 +15,8 @@ protein_translate() {
         [UGG]=Tryptophan
         [UAA]=STOP [UAG]=STOP [UGA]=STOP
     )
+    rna="$1"
+    proteins=()
     while [[ -n $rna ]]
     do
         codon=${rna:0:3}
