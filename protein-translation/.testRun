@@ -39,3 +39,45 @@ $ BATS_RUN_SKIPPED=true command bats *.bats
 32 tests, 0 failures
 
 =================================================
+
+
+
+=================================================
+Thu Oct 31 16:33:39 EET 2024
+=================================================
+$ BATS_RUN_SKIPPED=true command bats *.bats
+
+1..32
+ok 1 Empty RNA sequence results in no proteins
+ok 2 Methionine RNA sequence
+ok 3 Phenylalanine RNA sequence 1
+ok 4 Phenylalanine RNA sequence 2
+ok 5 Leucine RNA sequence 1
+ok 6 Leucine RNA sequence 2
+ok 7 Serine RNA sequence 1
+ok 8 Serine RNA sequence 2
+ok 9 Serine RNA sequence 3
+ok 10 Serine RNA sequence 4
+ok 11 Tyrosine RNA sequence 1
+ok 12 Tyrosine RNA sequence 2
+ok 13 Cysteine RNA sequence 1
+ok 14 Cysteine RNA sequence 2
+ok 15 Tryptophan RNA sequence
+ok 16 STOP codon RNA sequence 1
+ok 17 STOP codon RNA sequence 2
+ok 18 STOP codon RNA sequence 3
+ok 19 Sequence of two protein codons translates into proteins
+ok 20 Sequence of two different protein codons translates into proteins
+ok 21 Translate RNA strand into correct protein list
+ok 22 Translation stops if STOP codon at beginning of sequence
+ok 23 Translation stops if STOP codon at end of two-codon sequence
+ok 24 Translation stops if STOP codon at end of three-codon sequence
+ok 25 Translation stops if STOP codon in middle of three-codon sequence
+ok 26 Translation stops if STOP codon in middle of six-codon sequence
+ok 27 Sequence of two non-STOP codons does not translate to a STOP codon
+ok 28 Error case
+ok 29 Non-existing codon can't translate
+ok 30 Unknown amino acids, not part of a codon, can't translate
+ok 31 Incomplete RNA sequence can't translate
+ok 32 Incomplete RNA sequence can translate if valid until a STOP codon
+=================================================
