@@ -1,0 +1,20 @@
+=================================================
+Wed Nov 27 12:16:00 EET 2024
+=================================================
+$ BATS_RUN_SKIPPED=true command bats *.bats
+resistor_color_duo.bats
+ ✓ brown black
+ ✓ blue grey
+ ✓ yellow violet
+ ✓ white red
+ ✓ orange orange
+ ✓ invalid color
+ ✓ one valid color and one invalid color
+ ✓ one invalid color and one valid color
+ ✓ ignore too many colors
+ ✓ black brown
+ ✓ black grey
+
+11 tests, 0 failures
+
+=================================================
