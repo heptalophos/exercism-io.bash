@@ -18,14 +18,18 @@ color_code() {
     esac
 }
 
-resistance() {
-    band1=$(color_code "$1") || errexit "invalid color"
-    band2=$(color_code "$2") || errexit "invalid color"
-    echo $(( 10 * band1 + band2 ))
+resistor_color_duo() {
+    local -i resistance=0
+    for color in "${@:1:2}" 
+    do 
+        band=$(color_code "$color") || errexit "invalid color"
+        resistance=$(( 10 * resistance + band ))
+    done
+    echo "$resistance"
 }
 
 main() {
-    resistance "$@" && exit 0
+    resistor_color_duo "$@" && exit 0
 }
 
 set -e -u && main "$@"
