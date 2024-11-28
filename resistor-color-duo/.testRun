@@ -18,3 +18,24 @@ resistor_color_duo.bats
 11 tests, 0 failures
 
 =================================================
+
+
+
+=================================================
+Wed Nov 27 12:31:07 EET 2024
+=================================================
+$ BATS_RUN_SKIPPED=true command bats *.bats
+
+1..11
+ok 1 brown black
+ok 2 blue grey
+ok 3 yellow violet
+ok 4 white red
+ok 5 orange orange
+ok 6 invalid color
+ok 7 one valid color and one invalid color
+ok 8 one invalid color and one valid color
+ok 9 ignore too many colors
+ok 10 black brown
+ok 11 black grey
+=================================================
