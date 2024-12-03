@@ -8,7 +8,8 @@ sieve() {
         (! ${prime[j]}) && continue  
         for (( m=j**2; m<=limit; m+=j )); do prime[m]=false; done
     done
-    for (( n=2; n<=limit; ++n )); do 
+    (( "$limit" >= 2 )) && primes+=(2)
+    for (( n=3; n<=limit; n+=2 )); do 
         ${prime[n]} && primes+=("$n")
     done
     echo "${primes[*]}"

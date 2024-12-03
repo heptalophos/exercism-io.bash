@@ -13,3 +13,21 @@ sieve.bats
 5 tests, 0 failures
 
 =================================================
+
+
+
+=================================================
+Mon Dec  2 14:57:36 EET 2024
+=================================================
+$ BATS_RUN_SKIPPED=true command bats *.bats
+
+sieve.bats
+ ✓ no primes under two
+ ✓ find first prime
+ ✓ find primes up to 10
+ ✓ limit is prime
+ ✓ find primes up to 1000
+
+5 tests, 0 failures
+
+=================================================
