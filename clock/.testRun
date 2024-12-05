@@ -1,0 +1,52 @@
+=================================================
+Thu Dec  5 19:16:12 EET 2024
+=================================================
+$ BATS_RUN_SKIPPED=true command bats *.bats
+
+clock.bats
+ ✓ on the hour
+ ✓ past the hour
+ ✓ midnight is zero hours
+ ✓ hour rolls over
+ ✓ hour rolls over continuously
+ ✓ sixty minutes is next hour
+ ✓ minutes roll over
+ ✓ minutes roll over continuously
+ ✓ hour and minutes roll over
+ ✓ hour and minutes roll over continuously
+ ✓ hour and minutes roll over to exactly midnight
+ ✓ negative hour
+ ✓ negative hour rolls over
+ ✓ negative hour rolls over continuously
+ ✓ negative minutes
+ ✓ negative minutes roll over
+ ✓ negative minutes roll over continuously
+ ✓ negative sixty minutes is previous hour
+ ✓ negative hour and minutes both roll over
+ ✓ negative hour and minutes both roll over continuously
+ ✓ add minutes
+ ✓ add no minutes
+ ✓ add to next hour
+ ✓ add more than one hour
+ ✓ add more than two hours with carry
+ ✓ add across midnight
+ ✓ add more than one day (1500 min = 25 hrs)
+ ✓ add more than two days
+ ✓ subtract minutes
+ ✓ subtract to previous hour
+ ✓ subtract more than an hour
+ ✓ subtract across midnight
+ ✓ subtract more than two hours
+ ✓ subtract more than two hours with borrow
+ ✓ subtract more than one day (1500 min = 25 hrs)
+ ✓ subtract more than two days
+ ✓ no args
+ ✓ too many args
+ ✓ three args
+ ✓ invalid delta
+ ✓ non-numeric args are errors
+ ✓ non-numeric delta errors
+
+42 tests, 0 failures
+
+=================================================
