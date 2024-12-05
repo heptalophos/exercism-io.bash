@@ -8,9 +8,9 @@ errexit() { usage; echo "$1" >&2; exit 1; }
 
 clock() {
     (( "$#" != 2 && "$#" != 4 )) && errexit "Error: invalid arguments"
-    local re
-    re='[^[:digit:]\ +-]'
-    [[ "$1" =~ $re || "$2" =~ $re || "$4" =~ $re ]] && 
+    local rex
+    rex='[^[:digit:]\ +-]'
+    [[ "$1" =~ $rex || "$2" =~ $rex || "$4" =~ $rex ]] && 
     errexit "Error: invalid arguments"
     [[ -n "$3" && "$3" != [+-] ]] && errexit "Error: invalid arguments"
     local -i mins
