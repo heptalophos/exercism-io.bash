@@ -2,7 +2,7 @@
 
 eggs() {
     local -i num="$1" count=0
-    while (( num > 0 )); do
+    while (( num )); do
         (( num & 1 )) && (( ++count )) && (( num >>= 1 )) || (( num >>= 1 ))
     done
     echo "$count"	
