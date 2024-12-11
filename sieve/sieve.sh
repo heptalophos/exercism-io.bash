@@ -12,7 +12,7 @@ sieve() {
     for (( n=3; n<=limit; n+=2 )); do 
         ${prime[n]} && primes+=("$n")
     done
-    echo "${primes[*]}"
+    echo "${primes[*]}" || :
 }
 
 main() {
