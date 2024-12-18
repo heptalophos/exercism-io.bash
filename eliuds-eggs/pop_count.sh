@@ -2,10 +2,10 @@
 
 eggs() {
     local -i num="$1" count=0
-    while (( num )); do
-        (( num & 1 )) && (( ++count )) && (( num >>= 1 )) || (( num >>= 1 ))
+    while (( num > -1 )); do
+        (( ++count )) && (( num |= num + 1 ))
     done
-    echo "$count"	
+    echo $(( 64 - "$count" ))	
 }
 
 main() { eggs "$1" && exit 0; }
