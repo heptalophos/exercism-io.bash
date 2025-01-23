@@ -7,8 +7,7 @@ anagram() {
     for i in "${candidates[@]}"
     do
         local candidate=$( normalized "$i" )
-        [[ ${candidate} == "${word}" && ${i^^} != ${1^^} ]] && 
-        anagrams+="$i "
+        [[ ${candidate} == "${word}" && ${i^^} != ${1^^} ]] && anagrams+="$i "
     done
     echo $anagrams
 }
