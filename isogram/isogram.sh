@@ -11,7 +11,7 @@ isogram() {
         char=${phrase:$i:1}
         [[ ${char//[^a-z]} == "" ]] && continue
         cp=$(ord "$char")
-        (( (flag & 1 << (cp - alpha)) )) && echo false && exit 0
+        (( flag  & 1 << (cp - alpha) )) && echo false && exit 0
         (( flag |= 1 << (cp - alpha) ))
     done
     echo true
