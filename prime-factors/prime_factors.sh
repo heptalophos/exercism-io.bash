@@ -13,8 +13,6 @@ prime_factors() {
     echo "${pfactors[*]}"
 }
 
-main() {
-    prime_factors $1 && exit 0
-}
+main() { prime_factors $1 && exit 0; }
 
 set -eu && main $@
