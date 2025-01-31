@@ -1,0 +1,22 @@
+=================================================
+Fri Jan 31 15:35:24 EET 2025
+=================================================
+$ BATS_RUN_SKIPPED=true command bats *.bats
+
+prime_factors.bats
+ ✓ no factors
+ ✓ prime number
+ ✓ another prime number
+ ✓ square of a prime
+ ✓ product of first prime
+ ✓ cube of a prime
+ ✓ product of second prime
+ ✓ product of third prime
+ ✓ product of first and second primes
+ ✓ product of primes and non-primes
+ ✓ product of primes
+ ✓ factors include a large prime
+
+12 tests, 0 failures
+
+=================================================
