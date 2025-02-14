@@ -1,0 +1,59 @@
+=================================================
+Fri Feb 14 23:27:51 EET 2025
+=================================================
+$ BATS_RUN_SKIPPED=true command bats *.bats
+
+1..10
+ok 1 rotate a by 0, same output as input
+ok 2 rotate a by 1
+ok 3 rotate a by 26, same output as input
+ok 4 rotate m by 13
+ok 5 rotate n by 13 with wrap around alphabet
+ok 6 rotate capital letters
+not ok 7 rotate spaces
+# (from function `assert_output' in file bats-extra.bash, line 394,
+#  in test file rotational_cipher.bats, line 59)
+#   `assert_output "$expected"' failed
+#
+# -- output differs --
+# expected : T R L
+# actual   : O
+# --
+#
+not ok 8 rotate numbers
+# (from function `assert_output' in file bats-extra.bash, line 394,
+#  in test file rotational_cipher.bats, line 67)
+#   `assert_output "$expected"' failed
+#
+# -- output differs --
+# expected : Xiwxmrk 1 2 3 xiwxmrk
+# actual   : Uftujoh
+# --
+#
+not ok 9 rotate punctuation
+# (from function `assert_output' in file bats-extra.bash, line 394,
+#  in test file rotational_cipher.bats, line 75)
+#   `assert_output "$expected"' failed
+#
+# -- output differs --
+# expected (1 lines):
+#   Gzo'n zvo, Bmviyhv!
+# actual (5 lines):
+#   rotational_cipher.sh: line 28: ((: eat,: syntax error: operand expected (error token is ",")
+#   rotational_cipher.sh: line 28: ((: eat,: syntax error: operand expected (error token is ",")
+#   rotational_cipher.sh: line 28: ((: eat,: syntax error: operand expected (error token is ",")
+#   rotational_cipher.sh: line 28: ((: eat,: syntax error: operand expected (error token is ",")
+#   Let's
+# --
+#
+not ok 10 rotate all letters
+# (from function `assert_output' in file bats-extra.bash, line 394,
+#  in test file rotational_cipher.bats, line 83)
+#   `assert_output "$expected"' failed
+#
+# -- output differs --
+# expected : Gur dhvpx oebja sbk whzcf bire gur ynml qbt.
+# actual   : The
+# --
+#
+=================================================
