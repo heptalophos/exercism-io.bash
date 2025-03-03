@@ -5,6 +5,7 @@ errexit() { echo "$*" >&2 && exit 1; }
 ord() { LC_CTYPE=C printf '%d' "'$1"; }
 
 isogram() {
+    # shellcheck disable=SC2155
     local -i alpha=$(ord a) flag=0
     local phrase=${1,,}
     for (( i=0; i < ${#phrase}; ++i )); do
@@ -20,7 +21,7 @@ isogram() {
 main() {
     [[ $# != 1 ]] && 
     errexit "Usage: ${0#*} string_with_possible_spaces_or_punctuations"
-    isogram $@ && exit 0 
+    isogram "$1" && exit 0 
 }
 # set -x
 set -e && main "$@"
