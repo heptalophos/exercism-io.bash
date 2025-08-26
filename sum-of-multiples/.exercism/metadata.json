@@ -1,1 +1,9 @@
-{"track":"bash","exercise":"sum-of-multiples","id":"ca4580007533458a96dcd2e474c03f50","url":"https://exercism.org/tracks/bash/exercises/sum-of-multiples","handle":"heptalophos","is_requester":true,"auto_approve":false}
+{
+    "track": "bash",
+    "exercise": "sum-of-multiples",
+    "id": "ca4580007533458a96dcd2e474c03f50",
+    "url": "https://exercism.org/tracks/bash/exercises/sum-of-multiples/solutions/ca4580007533458a96dcd2e474c03f50",
+    "handle": "heptalophos",
+    "is_requester": true,
+    "auto_approve": false
+}
