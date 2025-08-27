@@ -1,0 +1,24 @@
+=================================================
+Wed Aug 27 21:50:47 EEST 2025
+=================================================
+$ BATS_RUN_SKIPPED=true command bats *.bats
+
+1..16
+ ✓ no multiples within limit
+ ✓ one factor has multiples within limit
+ ✓ more than one multiple within limit
+ ✓ more than one factor with multiples within limit
+ ✓ each multiple is only counted once
+ ✓ a much larger limit
+ ✓ three factors
+ ✓ factors not relatively prime
+ ✓ some pairs of factors relatively prime and some not
+ ✓ one factor is a multiple of another
+ ✓ much larger factors
+ ✓ all numbers are multiples of 1
+ ✓ no factors means an empty sum
+ ✓ the only multiple of 0 is 0
+ ✓ the factor 0 does not affect the sum of multiples of other factors
+ ✓ solutions using include-exclude must extend to cardinality greater than 3
+ 
+=================================================
