@@ -1,0 +1,21 @@
+=================================================
+Sun Dec 21 09:46:49 EET 2025
+=================================================
+$ BATS_RUN_SKIPPED=true command bats *.bats
+
+series.bats
+ ✓ slices of one from one
+ ✓ slices of one from two
+ ✓ slices of two
+ ✓ slices of two overlap
+ ✓ slices can include duplicates
+ ✓ slices of a long series
+ ✓ slice length is too large
+ ✓ slice length is way too large
+ ✓ slice length cannot be zero
+ ✓ slice length cannot be negative
+ ✓ empty series is invalid
+
+11 tests, 0 failures
+
+=================================================
