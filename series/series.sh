@@ -1,24 +1,27 @@
 #!/usr/bin/env bash
 
-# The following comments should help you get started:
-# - Bash is flexible. You may use functions or write a "raw" script.
-#
-# - Complex code can be made easier to read by breaking it up
-#   into functions, however this is sometimes overkill in bash.
-#
-# - You can find links about good style and other resources
-#   for Bash in './README.md'. It came with this exercise.
-#
-#   Example:
-#   # other functions here
-#   # ...
-#   # ...
-#
-#   main () {
-#     # your main function code here
-#   }
-#
-#   # call main with all of the positional arguments
-#   main "$@"
-#
-# *** PLEASE REMOVE THESE COMMENTS BEFORE SUBMITTING YOUR SOLUTION ***
+errexit() { echo "$*" >&2 && exit 1; }
+
+series() {
+    local -i digits="$1" span="$2" len=${#1}
+    local -a slices=()
+
+    [[ "$len" -eq 0 ]] && 
+    errexit 'series cannot be empty'
+    [[ "$span" -eq 0 ]] && 
+    errexit 'slice length cannot be zero'
+    [[ "$len" -lt "$span" ]] && 
+    errexit 'slice length cannot be greater than series length'
+    [[ "$span" -lt 0 ]] && 
+    errexit 'slice length cannot be negative'
+    
+    for ((i = 0; i <= len - span; i++)) 
+    do
+        slices+=("${digits:i:span}")
+    done
+    echo "${slices[*]}"
+}
+
+main() { series "$@" && exit 0; }
+
+set -eu && main "$@"
